@@ -7,6 +7,7 @@ base.iphone=1794433303
 base.windowsphone8=2209982494
 common.android=1795526790
 eclipse.preferences.version=1
+encoding//apps/AngularJsTutor/android/css/main.css=UTF-8
 encoding//apps/AngularJsTutor/common/css/main.css=UTF-8
 encoding//apps/AngularJsTutor/common/index.html=ISO-8859-1
 encoding/<project>=UTF-8
