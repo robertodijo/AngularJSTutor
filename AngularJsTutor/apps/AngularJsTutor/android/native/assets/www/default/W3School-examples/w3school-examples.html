@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta charset="ISO-8859-1"> -->
+<title>W3School AngularJs examples</title>
+</head>
+<body>
+<div data-ng-app="" data-ng-init="names=['Jani','Hege','Kai']">
+  <input type="text" data-ng-model="nameText" placeholder="Enter a text" /> {{nameText}}
+  <p>Looping with ng-repeat:</p>
+  <ul>
+    <li data-ng-repeat="x in names"><b>{{ x | filter:nameText }}</b></li>
+  </ul>
+  <input type="text" data-ng-model="nameText" placeholder="Enter a text" /> {{nameText}}
+</div>
+	<div>
+		<select size="2">
+			<option selected></option>
+		</select>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+</html>

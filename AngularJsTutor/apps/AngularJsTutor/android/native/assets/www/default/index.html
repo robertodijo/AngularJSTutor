@@ -1,0 +1,45 @@
+<!DOCTYPE HTML><html ng-app="">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>AngularJsTutor</title>
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "AngularJsTutor",
+   "APP_ID": "AngularJsTutor",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "190456552",
+   "WORKLIGHT_PLATFORM_VERSION": "6.2.0.00.20140719-1643",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/AngularJsTutor\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+    </head>
+    <body>
+        <div>
+	    		<!--application UI goes here-->
+            <h1 id="title">Hello, welcome to AngularJS !</h1>
+            <hr>
+            <label>Name: </label>
+	    		<input ng-model="someText" placeholder="Enter some text here" type="text">
+            <h1>Hello {{someText}} !</h1>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
+	    		<script src="js/initOptions.js"></script>
+	    		<script src="js/main.js"></script>
+	    		<script src="js/messages.js"></script>
+        </div>
+    </body>
+</html>

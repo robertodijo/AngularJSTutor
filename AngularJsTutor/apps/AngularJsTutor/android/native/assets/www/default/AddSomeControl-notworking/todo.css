@@ -1,0 +1,7 @@
+
+/* Stylesheet content from AddSomeControl-notworking/todo.css in folder common */
+@CHARSET "ISO-8859-1";
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
