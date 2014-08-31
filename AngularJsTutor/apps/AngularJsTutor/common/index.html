@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app>
+<html ng-app='myApp'>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,20 +7,17 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 
 </head>
-<body>
+<body ng-controller="TextController">
 	<div class="container-fluid ">
 		<h1>Angular Sandbox !</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-		Nunc ac pellentesque lacus, nec molestie enim. Duis vitae molestie augue. 
-		Nunc vestibulum pharetra vehicula. Aenean non quam volutpat, placerat metus ac, 
-		consectetur libero. </p>
+		<p>{{messages.introduction}} </p>
 		<p><a class="btn btn-primary ">Read more...</a></p>
 	</div>
 	<hr>
 <!-- 	-------------------------------------------------------------- -->
-	<div ng-controller="HelloController">
-		<input ng-model="greeting.text">
-		<p>Hallo, {{greeting.text}}</p>
+	<div>
+		<input ng-model="messages.greetingText">
+		<p>Hallo, {{messages.greetingText}}</p>
 	</div>
 
 <!-- 	-------------------------------------------------------------- -->
