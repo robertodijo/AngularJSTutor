@@ -2,5 +2,5 @@
  * 
  */
 function HelloController($scope){
-	$scope.greeting={text:'Hello'};
+	$scope.greeting={text:'Roberto'};
 }

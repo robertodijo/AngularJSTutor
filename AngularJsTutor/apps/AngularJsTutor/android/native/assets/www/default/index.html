@@ -2,9 +2,10 @@
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
-        <title>AngularJsTutor</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Angular Sandbox</title>
         <link href="worklight/worklight.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
         <script>
 		// Define WL namespace.
 		var WL = WL ? WL : {};
@@ -29,17 +30,24 @@
 		<script src="worklight/checksum.js"></script>
     </head>
     <body>
-        <div>
-	    		<!--application UI goes here-->
-            <h1 id="title">Hello, welcome to AngularJS !</h1>
-            <hr>
-            <label>Name: </label>
-	    		<input ng-model="someText" placeholder="Enter some text here" type="text">
-            <h1>Hello {{someText}} !</h1>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.min.js"></script>
-	    		<script src="js/initOptions.js"></script>
-	    		<script src="js/main.js"></script>
-	    		<script src="js/messages.js"></script>
+        <div class="container-fluid ">
+            <h1>Angular Sandbox !</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Nunc ac pellentesque lacus, nec molestie enim. Duis vitae molestie augue. 
+		Nunc vestibulum pharetra vehicula. Aenean non quam volutpat, placerat metus ac, 
+		consectetur libero. </p>
+            <p>
+                <a class="btn btn-primary">Read more...</a>
+            </p>
         </div>
+        <hr>
+<!-- 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div ng-controller="HelloController">
+            <p></p>
+        </div>
+<!-- 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- put script imports here -->
+        <script src="js/angular.js"></script>
+	<script src="js/controllers.js"></script>
     </body>
 </html>

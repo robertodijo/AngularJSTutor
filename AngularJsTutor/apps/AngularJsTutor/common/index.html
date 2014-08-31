@@ -14,15 +14,17 @@
 		Nunc ac pellentesque lacus, nec molestie enim. Duis vitae molestie augue. 
 		Nunc vestibulum pharetra vehicula. Aenean non quam volutpat, placerat metus ac, 
 		consectetur libero. </p>
-		<p><a class="btn btn-primary">Read more...</a></p>
+		<p><a class="btn btn-primary ">Read more...</a></p>
+	</div>
+	<hr>
+<!-- 	-------------------------------------------------------------- -->
+	<div ng-controller="HelloController">
+		<input ng-model="greeting.text">
+		<p>Hallo, {{greeting.text}}</p>
 	</div>
 
-	<hr>
-	<label class="label label-default">Name: </label>
-	<input type="text" ng-model="someText"
-		placeholder="Enter some text here">
-	<h1>Hello {{someText}} !</h1>
-
+<!-- 	-------------------------------------------------------------- -->
+<!-- put script imports here -->
 	<script src="js/angular.js"></script>
 	<script src="js/controllers.js"></script>
 </body>
